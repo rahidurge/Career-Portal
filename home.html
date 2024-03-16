@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.rtl.min.css" integrity="sha384-WJUUqfoMmnfkBLne5uxXj+na/c7sesSJ32gI7GfCk4zO4GthUKhSEGyvQ839BC51" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Portal</title>
+  <style>
+    body{
+      margin: 0px;
+      padding: 0px;
+    }
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+
+   header {
+        background-color: #001660;
+        color: white;
+        padding: 0px;
+        margin: 0px;
+    }
+    a{
+        display: flex;
+        justify-content: center;
+        text-decoration: none;
+        color: white;
+    }
+
+    footer {
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        background-color: #001660;
+        color: white;
+        padding: 5px;
+    }
+    
+    h1{
+        display: flex;
+        font-size: 50px;
+        font-family: 'Times New Roman', Times, serif;
+        padding-bottom: 40px;
+    }
+    h2{
+        display: flex;
+        justify-content: center;
+        font-size: 30px;
+        animation-name: anni;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+
+    }
+    @keyframes anni {
+     from{
+      color: black;
+     } to{
+     color:#ff5361;
+     }
+    }
+    #banner p{
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        font-size: 30px;
+        color: #001660;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    li{
+        padding: 0px;
+        color: white;
+        display: flex;
+        justify-content: center;
+        text-align: right;
+        margin: 0px 90px 20px 90px;
+        font-size: 20px;
+    } 
+    ul{
+        display: flex;
+    }
+    .login{
+        display: inline-block;
+        position: absolute;
+        color: white;
+        right: 110px;
+        top: 20px;
+        background-color: #ff5361;
+        width: 80px;
+        height: 40px;
+        border-radius: 10px;
+        box-shadow: 2px 2px 2px black;
+
+    }
+    .signup{
+        display: inline-block;
+        position: absolute;
+        color: white;
+        right: 20px;
+        top: 20px;
+        background-color: #ff5361; 
+        width: 80px;
+        height: 40px;
+        border-radius: 10px;
+        box-shadow: 2px 2px 2px black;
+    }
+    a:hover{
+      color: #ff5361;
+    }
+    h2{
+        padding: 20px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-weight: 900;
+    }
+    img{
+        height: 500px;
+        width: 100%;
+    }
+    .extra{
+      width: 48%;
+      height: 700px;
+  margin: 30px;
+  border: 5px solid  #001660;
+  border-radius: 10px;
+  overflow-y: auto;
+    }
+    .this{
+      display: flex;
+    }
+    .jii{
+  width: 200px;
+  height: 200px;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin: 2px;
+
+    }
+    .d1{
+      display: flex;
+      /* justify-content: flex-start; */
+    }
+.k1{
+  display: flex;
+  color: #ff5361;
+  margin: 2px 5px 5px 2px;
+  font-family: cursive;
+}
+@media (max-width : 500px) and (min-width: 1000){
+    ul{
+      display: block;
+    }
+    .jii{
+      width: 50px;
+      height: 50px;
+    }
+    li{
+        padding: 0px;
+        color: white;
+        display: block;
+        justify-content: center;
+        text-align: right;
+        /* margin: 0px 90px 20px 90px; */
+        font-size: 20px;
+    } 
+}
+@media (max-width : 1000px) and (min-width: 2000){
+  ul{
+      display: block;
+    }
+}
+ </style>
+</head>
+<body>
+  <!-- <hr class="hr"> -->
+    <header>
+
+		<h1>Career Portal</h1>
+        <button type="button" class="login" ><a href=login.html  target="_blank" >Login</a></button>
+        <button type="button" class="signup"><a href="signup.html"  onclick="window.location.href = signup.html">Sign Up</a></button>
+		<nav>
+			<ul>
+				<li><a href=home.html title="Go to HomePage" target="_blank" >Home</a></li>
+                <li><a href=job.html title="Go to Jobs" target="_blank">Jobs</a></li>
+				<li><a href=about.html title="Go to About" target="_blank">About</a></li>
+                <li><a href=applynow.html title="Apply Now" target="_blank">Apply Now</a></li>
+				<li><a href=contact.html title="Go to Contacts" target="_blank">Contact</a></li>
+                <li><a href=help.html title="Go to Help Center" target="_blank">Help</a></li>
+			</ul>
+		</nav>
+	</header>
+ 
+    <section id="banner">
+		<h2>Welcome to our Job Providing Website</h2>
+		<p>Find your dream job today!</p>
+       
+</section> <div id="carouselExampleCaptions" class="carousel slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="michael-QMGGKVgr5Mc-unsplash.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Foreign Tour</h5>
+          <p>You can now work in your dream country.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="campaign-creators-qCi_MzVODoU-unsplash.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5 class="change">Team Work.</h5>
+          <p class="change">Work with your own team.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="thought-catalog-UK78i6vK3sc-unsplash.jpg " class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Work From Home.</h5>
+          <p>Work from home & enjoy life with your family.</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  <h2>Know More</h2>
+<div class="this">
+<div class="extra">
+<div class="d1">
+  <h5 class="k1">Coding Field:</h5>
+  <p>Coding is an essential skill for many professions in today's world. It has a part to play in almost every aspect of our lives. A career in coding can be fulfilling not only because of the remuneration it offers but also because it lets you directly impact the lives of those around you.It will develop your compitetive skills.</p>
+  <img class="jii" src="kari-shea-1SAnrIxw5OY-unsplash.jpg" alt="">
+</div>
+<hr>
+<div class="d1">
+  <img class="jii" src="jeshoots-com--2vD8lIhdnw-unsplash.jpg" alt="">
+  <h5 class="k1">Part Time Jobs:</h5>
+  <p>Part-time jobs often enable you to help with different areas and aspects of the company, and having different tasks to complete every day could increase satisfaction in your role. A part-time job can also offer the opportunity to choose how you spend the rest of your time.Here are the reasons why having a part-time job at university will benefit it you both in the short and long-term: more money (obviously) work experience for your cv/resume. make new friends.</p>
+</div><hr>
+<div class="d1">
+  <h5 class="k1">For Development:</h5>
+  <p>The field itself is growing and evolving each day hence the learners and professionals in this field also learn and grow consistently. The use of data is never going to go out of use hence, the IT sector will always be of utility and people will have an opportunity to learn and grow.It also provides you with varied scopes and options with full flexibility in the job search.</p>
+  <img class="jii" src="kevin-ku-w7ZyuGYNpRQ-unsplash.jpg" alt="">
+</div>
+
+</div>
+<div class="extra">
+  <div class="d1">
+    <img class="jii" src="sigmund-Im_cQ6hQo10-unsplash.jpg" alt="">
+    <h5 class="k1">Easy Way:</h5>
+    <p>The Job seekers appreciate for being able to search job listings and reach towards the desired and best match of openings, you help keep your job board audiences with maximum commitment. You job portal should consent job seekers to search by salary, locations and facilitate with personalize options to give them best chances of finding job listings that meet their needs.</p>
+  </div><hr>
+  <div class="d1">
+    <h5 class="k1">Freelancing:</h5>
+    <p>Freelancers have the flexibility to work on a typical 9-to-5 shift, or they could choose to work only on nights and weekends. Having the freedom to choose your schedule, hours, and location is a huge benefit to consider.Freelancers have the divine freedom to say yes or no to certain projects and clients.</p>
+    <img class="jii" src="mimi-thian-BYGLQ32Wjx8-unsplash.jpg" alt="">
+  </div><hr>
+  <div class="d1">
+    <img class="jii" src="priscilla-du-preez-XkKCui44iM0-unsplash.jpg" alt="">
+    <h5 class="k1">Networking:</h5>
+    <p>Research shows that collaborative problem solving leads to better outcomes. People are more likely to take calculated risks that lead to innovation if they have the support of a team behind them. Working in a team encourages personal growth, increases job satisfaction, and reduces stress.This helps us to build networks.</p>
+  </div>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  </div>
+  </div>
+    <footer>
+		<p>Copyright &copy; 2023 CareerPortal</p>
+	</footer>
+</body>
+</html>

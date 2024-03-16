@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+</head>
+<body>
+    <header>
+        <h1 id="signupheading"> Sign Up </h1> 
+        <button type="button" class="login" title="Already have an account? Click here to login."><a href=login.html  target="_blank" >Login</a></button>
+    <nav>
+        <ul>
+            <li><a href=home.html title="Go to HomePage" target="_blank" >Home</a></li>
+            <li><a href=about.html title="Go to About" target="_blank">About</a></li>
+            <li><a href=job.html title="Go to Jobs" target="_blank">Jobs</a></li>
+            <li><a href=applynow.html title="Go to Your Details" target="_blank">Apply Now</a></li>
+            <li><a href=contact.html title="Go to Contacts" target="_blank">Contact</a></li>
+            <li><a href=help.html title="Go to Help Center" target="_blank">Help</a></li>
+        </ul>
+    </nav>
+</header>
+<br>
+    <form onsubmit="return validateForm()">
+        <table>
+            <tr>
+                <td>
+                    <label for="username">Enter your desired Username*  </label>
+                </td><td>
+                    <input type="text" id="username" name="username">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Enter your Date of Birth  </label>
+                </td><td>
+                    <input type="date">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for ="email">Enter your Email Address*  </label>
+                </td><td>
+                    <input type="email" id="email" name="email">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Enter your Phone Number  </label>
+                </td><td>
+                    <input type="number">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for ="password">Enter a suitable Password for you*  </label>
+                </td><td>
+                    <input type="password" id="password" name="password">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for ="confirmpassword">Confirm Password*  </label>
+                </td><td>
+                    <input type="password" id="confirmpassword" name="confirmpassword">
+                </td>
+            </tr>
+        </table>
+        <p align="center" style=font-size:10px><br>
+            <button style="font-size:15px;
+             padding: 5px 20px 5px 20px;
+              background-color:#ff5361;
+              border: none;
+              border-radius: 10px;
+               color:rgb(0, 0, 0)">Sign Up</button>
+                
+        </p>
+    </form>
+    <br>
+    <p style="text-align: center;"> (*) Marked fields are mandatory. </p>
+    <p style="text-align: center;font-size: 20px;"> People who use our service may have uploaded your conatct information to CareerPortal.
+         <inline style="color:rgb(2, 62, 151);">Learn More. </inline><br>
+        By clicking Sign Up, you agree to our Terms, <inline style="color:rgb(2, 62, 151);">Privacy Policy </inline>
+         and <inline style="color:rgb(2, 62, 151);">Cookie Policy.</inline>
+          You may receive SMS notifications from us and can opt out at any time.
+          </p>
+          <footer>
+            Copyright &copy; 2023 CareerPortal
+        </footer>
+</body>
+<style>
+    *{
+        margin: 0px;
+        padding: 0px;
+
+    }
+    body{
+        background-color: white;
+        font-size: 22px;
+        justify-content: center;
+    }
+    div{
+        margin: 15
+        px;
+        font-size: 19px;
+        text-align: right;
+        justify-content: right;
+    }
+    .login{
+        display: inline-block;
+        position: absolute;
+        color: white;
+        right: 20px;
+        top: 25px;
+        background-color: #ff5361;
+        width: 80px;
+        height: 40px;
+        border-radius: 10px;
+        box-shadow: 2px 2px 2px black;
+
+    }
+    h1{
+        font-size: 50px;
+        position: relative;
+        text-align: left;
+        padding: 2px 0px 0px 15px;
+        background-color: #001660;
+    }
+    header {
+        background-color: #001660;
+        color: white;
+        padding: 0px;
+    }
+    a{
+        display: flex;
+        justify-content: center;
+        text-decoration: none;
+        color: white;
+    }
+    a:hover{
+        color: #ff5361;
+    }
+
+    li{
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        text-align: right;
+        margin: 0px 70px 20px 70px;
+        font-size: 20px;
+    } 
+    ul{
+        display: flex;
+    }footer {
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        background-color: #001660;
+        color: white;
+        padding: 10px 0px 10px 0px;
+        height: 22px;
+        font-size: 18px;
+    }
+    form{
+        font-size: 22px;
+        text-align: center;
+        justify-content: center;
+    }
+    table{
+        padding:5px 0px 5px 0px;
+        text-align: center;
+        justify-content: center;
+        margin:auto;
+    }
+    td{
+        padding: 5px 30px 5px 0px;
+        text-align: left;
+    }
+</style>
+<script>
+    function validateForm(){
+        var username=document.getElementById('username').value;
+        var email=document.getElementById('email').value;
+        var password=document.getElementById('password').value;
+        var confirmpassword=document.getElementById('confirmpassword').value;
+        let isValid=true;
+        if (username===""){
+            isValid=false;
+            document.getElementById('username').classList.add('error');
+            alert('Please fill in the username field');
+        }
+        else{
+            document.getElementById('username').classList.remove('error');
+        }
+        if (email===""){
+            isValid=false;
+            document.getElementById('email').classList.add('error');
+            alert('Please fill in the email field');
+        }
+        else{
+            document.getElementById('email').classList.remove('error');
+        }
+        if (password===""){
+            isValid=false;
+            document.getElementById('password').classList.add('error');
+            alert('Please fill in the password field');
+        }
+        else{
+            document.getElementById('password').classList.remove('error');
+        }
+        if (confirmpassword===""){
+            isValid=false;
+            document.getElementById('confirmpassword').classList.add('error');
+            alert('Please fill in the confirm password field');
+        }
+        else{
+            document.getElementById('confirmpassword').classList.remove('error');
+        }
+        if (confirmpassword!==password){
+            isValid=false;
+            document.getElementById('confirmpassword').classList.add('error');
+            alert('Password does not match');
+        }
+        else{
+            document.getElementById('confirmpassword').classList.remove('error');
+        }
+        if(isValid){
+            alert('Sign Up Successful');
+            window.open('job.html');
+            return true;
+        }
+        else{
+            return false;
+        }   
+    }
+</script>
+</html>

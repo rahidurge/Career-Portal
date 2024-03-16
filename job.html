@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jobs</title>
+
+</head>
+<style>
+    body {
+        margin: 0px;
+        padding: 0px;
+
+    }
+
+
+
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .even {
+        margin-right: 1em;
+    }
+
+    .disc {
+        display: flex;
+        justify-content: center;
+        font-size: 80px;
+    }
+
+    .name {
+        font-size: 70px;
+
+    }
+
+    .content {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 20px;
+
+    }
+
+    .jobs {
+        height: 400px;
+        width: 1300px;
+        border-radius: 25px;
+        background-image: linear-gradient(aqua, red);
+        margin: 2em 15em;
+        padding: 1em;
+        transition: transform 0.5s ease-in-out;
+        position: relative;
+        margin: 2em auto;
+        overflow-y:auto;
+        /* overflow-y: scroll; */
+        width: 50%;
+    }
+    
+
+    .jobs:hover {
+        transform: scale(1.1);
+    }
+
+    a {
+        display: flex;
+        justify-content: center;
+        text-decoration: none;
+        color: white;
+    }
+
+    header {
+        background-color: #001660;
+        color: white;
+        padding: 0px;
+        margin: 0px;
+    }
+
+    li {
+        padding: 0px;
+        color: white;
+        display: flex;
+        justify-content: center;
+        text-align: right;
+        margin: 0px 90px 20px 90px;
+        font-size: 20px;
+    }
+
+    ul {
+        display: flex;
+    }
+
+    .login {
+        display: inline-block;
+        position: absolute;
+        color: white;
+        right: 110px;
+        top: 20px;
+        background-color: #ff5361;
+        width: 80px;
+        height: 40px;
+        border-radius: 10px;
+        box-shadow: 2px 2px 2px black;
+
+    }
+
+    .signup {
+        display: inline-block;
+        position: absolute;
+        color: white;
+        right: 20px;
+        top: 20px;
+        background-color: #ff5361;
+        width: 80px;
+        height: 40px;
+        border-radius: 10px;
+        box-shadow: 2px 2px 2px black;
+    }
+
+    a:hover {
+        color: #ff5361;
+    }
+
+    h1 {
+        display: flex;
+        font-size: 50px;
+        font-family: 'Times New Roman', Times, serif;
+        padding-bottom: 40px;
+    }
+
+    footer {
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        background-color: #001660;
+        color: white;
+        padding: 5px;
+    }
+</style>
+
+<body>
+    <header>
+
+        <h1>Career Portal</h1>
+        <button type="button" class="login"><a href=login.html target="_blank">Login</a></button>
+        <button type="button" class="signup"><a href="signup.html" onclick="window.location.href = signup.html">Sign
+                Up</a></button>
+        <nav>
+            <ul>
+                <li><a href=home.html title="Go to HomePage" target="_blank">Home</a></li>
+                <li><a href=job.html title="Go to Jobs" target="_blank">Jobs</a></li>
+                <li><a href=about.html title="Go to About" target="_blank">About</a></li>
+                <li><a href=applynow.html title="Apply Now" target="_blank">Apply Now</a></li>
+                <li><a href=contact.html title="Go to Contacts" target="_blank">Contact</a></li>
+                <li><a href=help.html title="Go to Help Center" target="_blank">Help</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1 class="disc" style="color: rgb(190, 115, 231);
+	-webkit-text-stroke: 1px #260505;
+	text-shadow: 0px 4px 4px rgb(42, 47, 9);">
+        <center>DISCOVER JOBS</center>
+    </h1>
+    <div class="main" style="">
+        <div class="jobs odd">
+            <p class="name o ">ARTIST</p>
+            <br>
+            <div class="content">
+                <h3>Main Objective:</h3> to create something interesting, unique or functional for use as an advertisement or
+                product packaging, for sale or exhibition, or just to entertain.
+                <br>
+                <h3>Key Skills:</h3>Creativity, attention to detail, artistic ability, time management, oral and written
+                communication, computer competency
+                <br>
+                <h3>Average Income:</h3> 5 LPA
+                <br>
+                <h3>Interested Companies:</h3>Dharma Productions,Pinterest
+
+            </div>
+        </div>
+        <div class="jobs even">
+            <p class="name e ">WEB DESIGNER</p>
+            <br>
+            <div class="content">
+                <h3>Main Objective:</h3> Establishing design guidelines, standards, and best practices. Maintaining the appearance of websites by enforcing content standards. Designing visual imagery for websites and ensuring that they are in line with branding for clients.
+                <br>
+                <h3>Key Skills:</h3> HTML,CSS,javascript, content management systems, web server management, responsive design, project management
+                <br>
+                <h3>Average Income:</h3> 5 LPA
+                <br>
+                <h3>Interested Companies:</h3>Amazon, Google, Facebook
+
+            </div>
+        </div>
+        <div class="jobs odd">
+            <p class="name o ">UI/UX DESIGNER</p>
+            <br>
+            <div class="content">
+                <h3>Main Objective:</h3> to create a suitable interface that meets the user's needs,  by first understanding user behavior patterns to make sure interface functions the way it's supposed to. 
+                <br>
+                <h3>Key Skills:</h3>Coding and dev, Research and analytics, business acumen, user testing, visual communication,wireframing and prototyping
+                <br>
+                <h3>Average Income:</h3> 4 LPA
+                <br>
+                <h3>Interested Companies:</h3> American Express, IBM, RJG
+
+            </div>
+        </div>
+        <div class="jobs even">
+            <p class="name e ">SOFTWARE ENGINEER</p>
+            <br>
+            <div class="content">
+                <h3>Main Objective:</h3>to design and develop products for businesses. Specialty areas include both front-end developers that focus on visual design of the website or app and back-end developers that focus on usability and flow. Full stack developers are skilled in both areas.
+                <br>
+                <h3>Key Skills:</h3>Computer Programming and Coding, Software Development, Object-Oriented Design (OOD), Software Testing and Debugging, Problem Solving and Logical Thinking
+                
+               
+                <br>
+                <h3>Average Income:</h3> 8 LPA
+                <br>
+                <h3>Interested Companies:</h3> Meta, Netflix, Apple
+
+            </div>
+        </div>
+        <div class="jobs odd">
+            <p class="name o ">FREELANCER</p>
+            <br>
+            <div class="content">
+                <h3>Main Objective:</h3>identifying and assessing client needs, researching on the project, and completing the project within the stipulated time.
+                <br>
+                <h3>Key Skills:</h3>Creativity, attention to detail, artistic ability, time management, oral and written
+                communication, computer competency
+                <br>
+                <h3>Average Income: </h3>1 LPA
+                <br>
+                <h3>Interested Companies:</h3> Google, Apple
+
+            </div>
+        </div>
+        <div class="jobs even">
+            <p class="name e ">CONTENT WRITER</p>
+            <br>
+            <div class="content">
+                <h3>Main Objective:</h3> to write informative and engaging articles to help brands showcase their products. To
+                write on a range of subjects and be responsible for creating the best possible written or visual
+                content, from blog posts to press releases.
+                <br>
+                <h3>Key Skills:</h3>Brainstorming Skills, Good SEO Knowledge, Adaptability,Organizational Skills, Ability to meet
+                deadlines, Communication
+
+                <br>
+                <h3>Average Income:</h3> 5 LPA
+                <br>
+                <h3>Interested Companies:</h3>BuzzFeed, Screen Rant
+
+            </div>
+        </div>
+        <div class="jobs odd">
+            <p class="name o ">APPLICATION DEVELOPER</p>
+            <br>
+            <div class="content">
+                <h3>Main Objective:</h3>Build and maintain web and mobile applications for our organization.Collaborate with the
+                rest of the team to ensure applications align with organizational goals as well as customer
+                needs.Oversee the performance of applications to ensure they're always running properly.
+                <br>
+                <h3>Key Skills:</h3>Agile Development,Presentation Software,Iot,computer proficiency, UXD, cross-platform
+                development skills, back end
+                <br>
+                <h3>Average Income:</h3> 10 LPA
+                <h3>Interested Companies:</h3>Delloite, Google, Netflix
+
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>Copyright &copy; 2023 CareerPortal</p>
+    </footer>
+
+</body>
+
+</html>

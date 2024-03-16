@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+      body {
+        background-color: #001660;
+        font-family: 'poppins',sans-serif;
+      } 
+      .login-button{
+        background-color: #ff5361;
+       border: none;
+       border-radius: 10%;
+       color: #ffffff;
+      }
+
+      .login-form {
+        width: 500px;
+        margin: 100px auto;
+        padding: 20px;
+        border: 1px solid #ffffff;
+        border-radius: 4%;
+        background-color: #fff;
+      }
+
+      h1 {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      .input-field {
+        margin-bottom: 10px;
+      }
+
+      .error-message {
+        color: red;
+        font-size: 14px;
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+    <form class="login-form" onsubmit="return redirectToJob()">
+     <h1>Login</h1>
+  <div class="form-group">
+<label for="email">Email:</label>
+<input type="email" class="form-control" id="email" required>
+     </div>
+  <div class="form-group">
+  <label for="password">Password:</label>
+  <input type="password" class="form-control" id="password" required>
+   </div>
+<button type="submit" class="login-button" class="btn btn-primary btn-block"> Log In </button>
+<div class="error-message" id="error-message"></div>
+</form>
+</div>
+</div>
+ </div>
+    <script>
+ function redirectToJob() {
+  // Redirect to the job.html page
+   window.location.href = "job.html";
+ return false; // prevent the form from actually submitting
+ }
+ </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>

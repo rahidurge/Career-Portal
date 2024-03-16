@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <title>Apply Now</title>
+
+    <style>
+
+*{
+    margin:0px;
+    padding: 0px;
+}
+    header {
+        background-color: #001660;
+        color: white;
+        padding: 20px;
+        margin: 0px;
+    }
+    a{
+        display: flex;
+        justify-content: center;
+        text-decoration: none;
+        color: white;
+    }
+    a:hover{
+        color:#ff5361;
+    }
+    li{
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        text-align: right;
+        margin: 20px 80px 5px 80px;
+        font-size: 20px;
+    } 
+    ul{
+        display: flex;
+    }
+    footer {
+        height: 50px;
+        display: flex;
+        /* margin: 10px 0px 0px 0px; */
+        justify-content: center;
+        text-align: center;
+        background-color: #001660;
+        color: white;
+        padding: 15px;
+    }
+        body{
+            margin: 0px;
+            padding: 0px;
+            align-items: center;
+            background-color: #001660;
+        }
+    h1{
+            /* text-align: center; */
+            display: flex;
+            /* justify-content: center; */
+            font-size: 50px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            margin: 0px;
+            padding: 0px;
+        }
+    nav{
+            flex: auto;
+        }
+        h2{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            /* font-style: oblique; */
+            font-size: 30%;
+            /* padding: 0px; */
+            /* margin: 0px; */
+        }
+
+    .input{
+        text-align: center;
+    }
+
+    .resume-section {
+    margin-bottom: 30px;
+    background-color: #d1dbdb4d;
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    /* align-items: center; */
+  }
+  
+  .resume-section h2 {
+    margin-bottom: 10px;
+    font-size: 30px;
+    color: #f21e5d;
+    text-shadow: 4px 4px 5px black, 8px 8px 6px black;
+    /* border: black; */
+    text-decoration: solid;
+    border-radius: 2%;
+    box-shadow: 10pt;
+  }
+
+  .resume-section .remove-btn:hover{
+    background-color: #650505;
+  }
+
+  .resume-section .add-btn:hover{
+    background-color: #064e41;
+  }
+  
+  .resume-section .add-btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-left: 1%;
+    border-radius: 6px;
+    align-items: left;
+    box-shadow: 2px 2px 2px black;
+  }
+  .resume-section .remove-btn {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-left: 1%;
+    border-radius: 6px;
+    box-shadow: 2px 2px 2px black;
+   }
+  .resume-section .row {
+    margin-bottom: 10px;
+
+  }
+  .resume-section input[type="text"], input[type="date"], input[type="number"]{
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+
+  .resume-section textarea{
+    width: 80%;
+    height: 100px;
+    padding: 10px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+
+  .form-select{
+    width: 60%;
+    height: 35px;
+    border-radius: 10px;;
+  }
+
+  .logout{
+        display: inline-block;
+        position: absolute;
+        color: white;
+        right: 20px;
+        top: 10px;
+        background-color:  #ff5361;
+        width: 80px;
+        height: 40px;
+        border: 0px solid white;
+        border-radius: 10px;
+        box-shadow: 2px 2px 2px black;
+    }
+    #submit{
+        color: white;
+        right: 20px;
+        top: 10px;
+        background-color:  #ff5361;
+        width: 120px;
+        height: 40px;
+        border: 0px solid white;
+        border-radius: 10px;
+        box-shadow: 2px 2px 2px black;
+    }
+    #submit:hover{
+        background-color: #650505;
+    }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Apply Now</h1>
+        <button type="button" class="logout">Logout</button>
+        <nav>
+			<ul>
+				<li><a href=job.html title="Go to HomePage" target="_blank" >Home</a></li>
+                <li><a href=job.html title="Go to Jobs" target="_blank">Jobs</a></li>
+				<li><a href=about.html title="Go to About" target="_blank">About</a></li>
+                <li><a href=applynow.html title="Apply Now" target="_blank">Apply Now</a></li>
+				<li><a href=contact.html title="Go to Contacts" target="_blank">Contact</a></li>
+                <li><a href=help.html title="Go to Help Center" target="_blank">Help</a></li>
+			</ul>
+		</nav>
+    </header>
+    <hr><hr>
+
+<center>
+        <div class="resume-section" id="jobs">
+            <hr>
+            <br>
+            <br>
+         <h2>Select the Job you'd like to apply for</h2>
+         <br>
+         <div id="selection">
+            <select class="form-select" aria-label="Default select example">
+                <option selected>Select Your Job</option>
+                <option value="1">Artist</option>
+                <option value="2">Website Designer</option>
+                <option value="3">UI/UX Designer</option>
+                <option value="4">Software Engineer</option>
+                <option value="5">Freelancer</option>
+                <option value="6">Content Writer</option>
+                <option value="7">Application Development</option>
+                <option value="8">Others</option>
+              </select>
+            </div>
+        </div>
+
+        
+        <div class="resume-section" id="personal-info">
+            <h2>Personal Information</h2>
+            <div class="row">
+              <input type="text" placeholder="Full Name" id="name">
+            </div>
+            <div class="row">
+              <input type="text" placeholder="Email" id="email">
+            </div>
+            <div class="row">
+              <input type="number" placeholder="Phone Number" maxlength="10" id="no">
+            </div>
+            <div>
+                <div class="row">
+                  <input type="text" placeholder="Address" id="address">
+                </div>
+            </div>
+          </div>
+          
+          <div class="resume-section" id="education">
+            <h2>Educational Qualification</h2>
+            <div class="row row-template">
+              <input type="text" placeholder="Degree" id="degree">
+              <input type="text" placeholder="Institute" id="ins">
+              <input type="date" placeholder="Year" id="year">
+              <br>
+              <button class="remove-btn" onclick="removeRow(this.parentNode)">Remove</button>
+            </div>
+            <button class="add-btn" onclick="addRow('education')">Add Qualification</button>
+          </div>
+          
+          <div class="resume-section" id="experience">
+            <h2>Experience</h2>
+            <div class="row row-template">
+              <input type="text" placeholder="Job Title" id="job">
+              <input type="text" placeholder="Company" id="company">
+              <textarea placeholder="Job Description" id="desc"></textarea>
+              <br>
+              <button class="remove-btn" onclick="removeRow(this.parentNode)">Remove</button>
+            </div>
+            <button class="add-btn" onclick="addRow('experience')">Add Experience</button>
+          </div>
+
+          <div class="resume-section" id="skills">
+            <h2>Skills</h2>
+            <div class="row row-template">
+              <input type="text" placeholder="Enter your skill here" id="skill">
+              <br>
+              <button class="remove-btn" onclick="removeRow(this.parentNode)">Remove</button>
+            </div>
+            <button class="add-btn" onclick="addRow('skills')">Add Skill</button>
+          </div>
+          
+          <div class="resume-section" id="hobbies">
+            <h2>Hobbies</h2>
+            <div class="row">
+              <textarea placeholder="List your hobbies here" id="hobby"></textarea>
+            </div>
+          </div>
+          
+          <div class="resume-section" id="achievements">
+            <h2>Achievements</h2>
+            <div class="row">
+              <textarea placeholder="List your achievements here" id="ach"></textarea>
+            </div>
+          </div>
+          
+          <div class="resume-section" id="acknowledgement">
+            <h2>Acknowledgement</h2>
+            <div class="row">
+              <textarea placeholder="Write your acknowledgement here" id="ack"></textarea>
+            </div>
+        </div>
+
+        <div class="resume-section">
+            <button id="submit" onClick="storeInput()">Submit</button>
+            <br>
+            <br>
+            <hr>
+        </div>
+
+        <hr><hr>
+    </center>
+<script>
+    function storeInput(){
+            document.getElementById("name").value="";
+            document.getElementById("email").value="";
+            document.getElementById("no").value="";
+            document.getElementById("address").value="";
+            document.getElementById("degree").value="";
+            document.getElementById("ins").value="";
+            document.getElementById("year").value="";
+            document.getElementById("job").value="";
+            document.getElementById("company").value="";
+            document.getElementById("desc").value="";
+            document.getElementById("skill").value="";
+            document.getElementById("hobby").value="";
+            document.getElementById("ach").value="";
+            document.getElementById("ack").value="";
+            // document.getElementById("fb").value="";
+            alert('Submission Successful');
+            window.open('home.html');
+    }
+</script>
+
+</body>
+
+<footer>
+    <p> Copyright &copy; 2023 CareerPortal</p>
+</footer>
+</html>

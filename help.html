@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ PAGE</title>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        header {
+            background-color: #001660;
+            color: white;
+            padding: 0px;
+        }
+        a{
+            display: flex;
+            justify-content: center;
+            text-decoration: none;
+            color: white;
+        }
+        a:hover{
+           color: #ff5361;
+        }
+        h3{
+            font-family:  Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+        li{
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            text-align: right;
+            margin: 0px 70px 20px 70px;
+            font-size: 20px;
+        } 
+        ul{
+            display: flex;
+        }
+        .faq-one{
+            border-top-left-radius: 15px solid white;
+            border-top-right-radius: 5px;
+        }
+        footer {
+            height: 50px;
+            display: flex;
+            /* margin: 10px 0px 0px 0px; */
+            justify-content: center;
+            text-align: center;
+            background-color: #001660;
+            color: white;
+            padding: 15px;}
+            .logout{
+        display: inline-block;
+        position: absolute;
+        color: white;
+        right: 20px;
+        top: 10px;
+        background-color:  #ff5361;
+        width: 80px;
+        height: 40px;
+        border: 2px solid white;
+        border-radius: 10px;
+    
+    }
+    .faq-container{
+        padding: 90px;
+    }
+    .home{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin-top: 60px;
+    }
+    </style>
+</head>
+<body>
+    <main>
+        <h1 class="faq-heading">FAQ'S</h1>
+        <button type="button" class="logout">Logout</button>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href=home.html title="Go to HomePage" target="_blank" >Home</a></li>
+                    <li><a href=job.html title="Go to Jobs" target="_blank">Jobs</a></li>
+                    <li><a href=about.html title="Go to About" target="_blank">About</a></li>
+                    <li><a href=applynow.html title="Go to Your Details" target="_blank">Apply Now</a></li>
+                    <li><a href=contact.html title="Go to Contacts" target="_blank">Contact</a></li>
+                    <li><a href=help.html title="Go to Help Center" target="_blank">Help</a></li>
+                </ul>
+            </nav>
+        </header><hr>
+       
+        <section class="faq-container">
+            <div class="faq-one">
+                <!-- faq question -->
+                <h1 class="faq-page">What Are Job Websites?</h1>
+                <!-- faq answer -->
+                <div class="faq-body">
+                    <p>At their core, job websites act as both search engines and databases for open jobs. Some even offer premium services for job seekers like career coaching and cover letter writing. Job sites can help candidates with any education and experience level find employment in any sector. Anyone actively looking for a job should strongly consider using a job website to find and apply to as many relevant opportunities as possible</p>
+                </div>
+            </div>
+            <hr class="hr-line">
+            <div class="faq-two">
+                <!-- faq question -->
+                <h1 class="faq-page">How Do Job Websites Work?</h1>
+                <!-- faq answer -->
+                <div class="faq-body">
+                    <p>Most job sites are free to browse. Simply type in your desired job title and your zip code to search for opportunities in your area. However, some job sites require upfront payment to unlock full browsing and application privileges. Even with paid job boards like FlexJobs, there is no guarantee that you will secure a position through the site, though.
+
+                        Once you’ve applied for a job through a job site, the hiring manager will review your information and reach out to you if interested. Certain platforms, like LinkedIn, allow employers to reach out to qualified candidates whether or not they’ve applied for an open position with the company.</p>
+                </div>
+            </div>
+            <hr class="hr-line">
+            <div class="faq-three">
+                <!-- faq question -->
+<h1 class="faq-page">What Is the #1 Most Effective Job Search Method Today?</h1>
+                <!-- faq answer -->
+                <div class="faq-body">
+                    <p>There may be no better way to improve your odds of finding a job than through networking. Employers who know you and your work often are more likely to give you an opportunity than those who don't know you. LinkedIn is our choice as best for connecting directly with recruiters, and it's a great way to make yourself visible to others in your field. Building a foundation of such connections can make your next job search easier.</p>
+                </div>
+            </div>
+            <button type="submit" class="home" onclick="window.location.href = 'home.html';" >Back</button>
+        </section>
+    <footer>
+		<p>Copyright &copy; 2023 CareerPortal</p>
+	</footer>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

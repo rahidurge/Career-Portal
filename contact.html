@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    header {
+        background-color: #001660;
+        color: white;
+        padding: 0px;
+    }
+    a{
+        display: flex;
+        justify-content: center;
+        text-decoration: none;
+        color: white;
+    }
+    a:hover{
+        color:#ff5361;
+    }
+    h3{
+        background-color: #001660;
+        border-radius: 20px;
+        font-family: 'Times New Roman', Times, serif;
+        text-shadow: 2px 2px 5px black;
+        font-weight:900;
+        font-size: 30px;
+        text-align: center;
+        margin-left: 200px;
+        margin-right: 200px;
+    }
+    li{
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        text-align: right;
+        margin: 10px 70px 20px 70px;
+        font-size: 20px;
+    } 
+    ul{
+        display: flex;
+    }
+    footer {
+        height: 50px;
+        display: flex;
+        /* margin: 10px 0px 0px 0px; */
+        justify-content: center;
+        text-align: center;
+        background-color: #001660;
+        color: white;
+        padding: 15px;
+    }
+
+        .logout{
+        display: inline-block;
+        position: absolute;
+        color: white;
+        right: 20px;
+        top: 10px;
+        background-color:  #ff5361;
+        width: 80px;
+        height: 40px;
+        border: 2px solid white;
+        border-radius: 10px;
+    
+    }
+    body{
+        background-color: #001660;
+    }
+    a:hover{
+       color: #ff5361;
+    }
+
+    form{
+        margin-bottom: 30px;
+        background-color: #d1dbdb4d;
+        max-width: 800px;
+        
+        padding: 20px; 
+    }
+
+    input, textarea{
+        border-radius: 20px;
+        /* margin: 20px 40px 20px 40px;  */
+    }
+</style>
+<body>
+    <h1>Contact Us</h1>
+    <button type="button" class="logout">Logout</button>
+    <header>
+        <nav>
+			<ul>
+				<li><a href=home.html title="Go to HomePage" target="_blank" >Home</a></li>
+                <li><a href=job.html title="Go to Jobs" target="_blank">Jobs</a></li>
+				<li><a href=about.html title="Go to About" target="_blank">About</a></li>
+                <li><a href=applynow.html title="Apply Now" target="_blank">Apply Now</a></li>
+				<li><a href=contact.html title="Go to Contacts" target="_blank">Contact</a></li>
+                <li><a href=help.html title="Go to Help Center" target="_blank">Help</a></li>
+			</ul>
+		</nav>
+    </header>
+    <hr> <hr> <hr>
+   <div class="container">
+   
+        <form onsubmit="sendEmail(); reset(); return false;">
+             <h3>GET IN TOUCH</h3>
+            <input type="text" id="name" placeholder="Your Name" required>
+            <br>
+            <input type="email" id="email" placeholder="Email id" required><br>
+            <input type="number" id="phone" placeholder="Phone no." required><br>
+            <textarea id="message" rows="4" placeholder="How Can We Help You" ></textarea><br>
+            <button type="submit" style="position: relative; bottom: 5px;right: 20%;" >Send</button>
+            <div class="cont">
+                <div class="btn-holder">
+                 <a href="job.html"></a>
+                 <button type="button" style="position: relative; bottom: 75px;left: 60%;" onclick="window.location.href = 'home.html';">Cancel</button>
+                </div>
+              </div>
+        </form>
+    </div><hr>
+    <hr>
+    <footer>
+		<p>Copyright &copy; 2023 CareerPortal</p>
+	</footer>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function sendEmail() {
+            Email.send({
+                Host: "smtp.office365.com",
+                Username: "",
+                Password: "",
+                To: '',
+                From: document.getElementById("email").value,
+                Subject: "New Contact Form Enquiry",
+                Body: "Name:"+document.getElementById("name").value
+                        +"<br> Email:"+document.getElementById("email").value
+                        +"<br> Phone no.:"+document.getElementById("phone").value
+                        +"<br> Message:"+document.getElementById("message").value
+
+            }).then(
+                message => alert("Message Sent Succesfully")
+            );
+        }
+       
+    </script>
+</body>
+</html>
